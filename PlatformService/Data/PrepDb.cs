@@ -21,6 +21,8 @@ namespace PlatformService.Data
                     new Platform() {Name = "SQL Server Developer Edition", Publisher = "Microsoft", Cost = "Free"},
                     new Platform() {Name = "Kubernetes", Publisher = "Cloud Native Computing Foundation", Cost = "Free"}
                 );
+
+                context.SaveChanges();
             }
             else {
                 Console.WriteLine("--> We already have data");
